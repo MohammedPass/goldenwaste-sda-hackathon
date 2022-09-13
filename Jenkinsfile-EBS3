@@ -18,7 +18,7 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t mohammedeid10/gold_db .'
+				sh 'docker build -t chandradeoarya/goldenwaste:1.0 .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline {
 		stage('Push') {
 
 			steps {
-				sh 'docker push mohammedeid10/gold_db'
+				sh 'docker push chandradeoarya/goldenwaste:1.0'
 			}
 		}
 
